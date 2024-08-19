@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RunActivity"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp"
+        tools:context=".MyRunsActivity"
+        android:nestedScrollingEnabled="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".MyRunsActivity">
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/run_date_textview"
+                android:text="date   00/00/0000 00:00 "
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#757575"
+                android:textSize="15sp"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/light_blue_100"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="delete run"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorLink="#00000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/run_pace_Relative_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/run_duration_Relative_Layout"
+                android:layout_marginLeft="50dp"
+                >
+                <TextView
+                    android:id="@+id/run_pace_numbers_Relative_Layout"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00 "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/run_pace_numbers_Relative_Layout"
+                    android:text="km/h"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:layout_alignBottom="@+id/run_pace_numbers_Relative_Layout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="avg speed"
+                    android:textStyle="bold"
+                    android:textColor="#616161"
+                    android:textSize="11sp"
+                    android:layout_below="@+id/run_pace_numbers_Relative_Layout"
+                    android:layout_margin="5dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/run_duration_Relative_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/run_date_textview"
+                android:layout_centerHorizontal="true"
+                >
+
+            >
+                <TextView
+                    android:id="@+id/run_duration_numbers_Relative_Layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00:00 "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="duration"
+                    android:textStyle="bold"
+                    android:textColor="#616161"
+                    android:textSize="11sp"
+                    android:layout_below="@+id/run_duration_numbers_Relative_Layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+
+
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/run_distance_Relative_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_below="@+id/run_duration_Relative_Layout"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:id="@+id/run_distance_numbers_Relative_Layout"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0.00 "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/run_distance_numbers_Relative_Layout"
+                    android:text="km"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:layout_alignBottom="@+id/run_distance_numbers_Relative_Layout"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="distance"
+                    android:textStyle="bold"
+                    android:textColor="#616161"
+                    android:textSize="11sp"
+                    android:layout_below="@+id/run_distance_numbers_Relative_Layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+
+                    />
+            </RelativeLayout>
+
+            <fragment
+
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:layout_below="@+id/run_distance_Relative_Layout"
+
+
+            />
+
+            <RelativeLayout
+                android:id="@+id/column_information"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/map"
+
+                >
+                <RelativeLayout
+                    android:layout_width="@dimen/_60dp_dagram_layout"
+                    android:layout_height="match_parent"
+                    android:id="@+id/time_layout"
+                    >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="time M:S"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+
+
+                    />
+            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_60dp_dagram_layout"
+                    android:layout_height="match_parent"
+                    android:id="@+id/distance_layout"
+                    android:layout_toRightOf="@+id/time_layout"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="distance\n     km"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/speed_layout"
+                    android:layout_toRightOf="@+id/distance_layout"
+                    android:layout_toLeftOf="@+id/km_layout"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                        android:text="speed\n km/H"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+
+
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_60dp_dagram_layout"
+                    android:layout_height="match_parent"
+                    android:id="@+id/km_layout"
+                    android:layout_alignParentRight="true"
+                    >
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="km"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+
+
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/my_runs_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/column_information"
+
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/app_navigation_bar_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        >
+        <Button
+            android:id="@+id/app_navigation_bar_profile_Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cornerRadius="0dp"
+            android:text="profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+        <Button
+            android:id="@+id/app_navigation_bar_new_run_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="new run"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+        <Button
+            android:id="@+id/app_navigation_bar_my_runs_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="my runs"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

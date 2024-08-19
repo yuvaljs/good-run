@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRunsActivity"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:context=".MyRunsActivity"
+        android:nestedScrollingEnabled="true"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".MyRunsActivity">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/my_runs_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/app_navigation_bar_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        >
+        <Button
+            android:id="@+id/profile_Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cornerRadius="0dp"
+            android:text="profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+        <Button
+            android:id="@+id/new_run_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="new run"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+        <Button
+            android:id="@+id/my_runs_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="my runs"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_200"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

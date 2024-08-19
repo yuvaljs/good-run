@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="@dimen/_60dp_dagram_layout"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/distance_layout"
+        android:layout_width="@dimen/_60dp_dagram_layout"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/time_layout"
+
+        >
+
+        <TextView
+
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pace_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/distance_layout"
+        android:layout_toLeftOf="@+id/km_layout"
+
+
+        >
+        <View
+            android:id="@+id/percentOfFastest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_blue_100"
+            android:layout_alignParentRight="true"
+            android:scaleX="2"
+
+            />
+
+
+        <TextView
+
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+    android:id="@+id/km_layout"
+    android:layout_width="@dimen/_60dp_dagram_layout"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+
+
+
+
+
+        >
+
+        <TextView
+
+            android:id="@+id/km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.0"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

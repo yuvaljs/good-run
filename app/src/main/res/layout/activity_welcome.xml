@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="#E1F5FE"
+    android:layoutDirection="ltr"
+
+    >
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/Welcome1_TextView"
+        android:text="Welcome"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/icon_size_50dp"
+        android:layout_alignParentTop = "true"
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/Welcome2_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Welcome1_TextView"
+        android:layout_alignLeft="@+id/Welcome1_TextView"
+        android:layout_alignRight="@+id/Welcome1_TextView"
+        android:text="To good run"
+        android:textColor="#388E3C"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sign_in_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="sign in"
+        android:backgroundTint="@color/light_blue_100"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+
+
+    <Button
+        android:id="@+id/log_in_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_Button"
+        android:layout_alignLeft="@+id/sign_in_Button"
+        android:layout_alignRight="@+id/sign_in_Button"
+        android:layout_marginTop="40dp"
+        android:text="log in"
+        android:backgroundTint="@color/light_blue_100"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

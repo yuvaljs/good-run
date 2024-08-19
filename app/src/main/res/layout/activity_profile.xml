@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+<Button
+    android:id="@+id/log_out"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="10dp"
+    android:text="log out"
+    android:textSize="18sp"
+    android:textDirection="ltr"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    app:cornerRadius="0dp"
+    android:backgroundTint="@color/light_blue_100"
+
+
+    />
+
+    <RelativeLayout
+        android:id="@+id/user_name_RelativeLayout"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+
+        >
+        <TextView
+
+            android:id="@+id/user_name_title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="user name:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+            />
+        <TextView
+
+            android:id="@+id/user_name_text_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/user_name_title_TextView"
+            android:layout_centerHorizontal="true"
+
+            android:text="yyy yyy"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/runs_saved_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_RelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30dp"
+
+        >
+        <TextView
+
+            android:id="@+id/runs_saved_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="runs saved:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+
+
+
+            />
+        <TextView
+
+            android:id="@+id/runsSaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/runs_saved_TextView"
+            android:layout_centerHorizontal="true"
+
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/distance_you_run_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_RelativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+
+            android:id="@+id/distance_you_run_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="distance you\n        run:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+
+
+
+            />
+        <TextView
+
+            android:id="@+id/distanceRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/distance_you_run_TextView"
+            android:layout_centerHorizontal="true"
+            android:text="00.00"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/runs_saved_this_week_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_you_run_RelativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+
+            android:id="@+id/runs_saved_this_week_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="runs saved\n this week:"
+
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+
+
+
+            />
+        <TextView
+
+            android:id="@+id/runsSavedThisWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/runs_saved_this_week_TextView"
+            android:layout_centerHorizontal="true"
+
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/distance_you_run_this_week_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runs_saved_this_week_RelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+
+            android:id="@+id/distance_you_run_this_week_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="distance you run\n      this week:"
+
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+
+
+
+            />
+        <TextView
+
+            android:id="@+id/distanceRunThisWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/distance_you_run_this_week_TextView"
+            android:layout_centerHorizontal="true"
+
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/distance_of_the_longest_run_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runs_saved_this_week_RelativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <TextView
+
+            android:id="@+id/distance_of_the_longest_run_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="longest run \n   distance :"
+
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+
+
+
+
+            />
+        <TextView
+
+            android:id="@+id/distanceOfLongestRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/distance_of_the_longest_run_TextView"
+            android:layout_centerHorizontal="true"
+
+            android:text="00.00"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/app_navigation_bar_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        >
+        <Button
+            android:id="@+id/app_navigation_bar_profile_Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cornerRadius="0dp"
+            android:text="profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/light_blue_200"
+
+            />
+        <Button
+            android:id="@+id/app_navigation_bar_new_run_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="new run"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+        <Button
+            android:id="@+id/app_navigation_bar_my_runs_Button"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="my runs"
+            android:textSize="18sp"
+            android:textDirection="ltr"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/light_blue_100"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

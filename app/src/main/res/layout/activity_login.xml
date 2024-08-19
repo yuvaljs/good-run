@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+
+
+
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/log_in_title_activity_login"
+        android:text="log in"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+
+        android:layout_marginTop="@dimen/icon_size_50dp"
+        android:layout_marginLeft="@dimen/icon_size_50dp"
+
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size_100dp"
+        android:layout_height="@dimen/icon_size_100dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/icon_size_50dp"
+        android:layout_alignParentTop="true"
+
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/enter_your_name_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter your Name"
+        android:textColorHint="#9E9E9E"
+        android:focusable = "true"
+        android:layout_below="@id/log_in_title_activity_login"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/enter_password_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "Enter password"
+        android:textColorHint="#9E9E9E"
+        android:focusable = "true"
+        android:layout_below="@id/enter_your_name_EditText"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_alignLeft="@id/enter_your_name_EditText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/user_name_or_password_is_not_correct_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#EF5350"
+        android:text="user name or password is not correct "
+
+        android:layout_below="@+id/enter_password_EditText"
+        android:layout_alignLeft="@id/enter_password_EditText"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:visibility="invisible"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/log_in_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_name_or_password_is_not_correct_TextView"
+        android:layout_alignLeft="@id/enter_password_EditText"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:text="log in"
+        android:backgroundTint="@color/light_blue_100"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+
+
+    <Button
+        android:id="@+id/sign_in_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_25dp"
+        android:backgroundTint="@color/light_blue_100"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="0dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

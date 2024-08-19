@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@color/light_blue_50"
+    android:layoutDirection="ltr"
+
+    >
+
+
+
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/log_in_title_activity_sign_in"
+        android:text="sign in"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#388E3C"
+
+        android:layout_marginTop="@dimen/icon_size_50dp"
+        android:layout_marginLeft="@dimen/icon_size_50dp"
+
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <ImageView
+        android:layout_width="@dimen/icon_size_100dp"
+        android:layout_height="@dimen/icon_size_100dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:layout_marginRight="@dimen/icon_size_50dp"
+        android:layout_alignParentTop="true"
+
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/enter_your_name_sign_in_activity_EditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint = "Enter your Name"
+        android:textColorHint="#9E9E9E"
+        android:focusable = "true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/log_in_title_activity_sign_in"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="@dimen/margin_25dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/enter_password_1_EditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint = "Enter password"
+        android:textColorHint="#9E9E9E"
+        android:focusable = "true"
+        android:layout_below="@id/enter_your_name_sign_in_activity_EditText"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_alignLeft="@id/enter_your_name_sign_in_activity_EditText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+
+
+        />
+    <EditText
+        android:id="@+id/enter_password_2_EditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint = "Enter password again"
+        android:textColorHint="#9E9E9E"
+        android:focusable = "true"
+        android:layout_below="@id/enter_password_1_EditText"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_alignLeft="@id/enter_your_name_sign_in_activity_EditText"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:minLines="1"
+        android:lines="1"
+
+
+        />
+
+
+    <TextView
+
+        android:id="@+id/username_already_exists_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#EF5350"
+        android:text="Username already exists  "
+
+        android:layout_below="@+id/enter_password_2_EditText"
+        android:layout_alignLeft="@id/enter_password_2_EditText"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:visibility="invisible"
+
+
+
+        />
+    <TextView
+
+        android:id="@+id/the_passwords_do_not_match_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#EF5350"
+        android:text="The passwords do not match  "
+
+        android:layout_below="@+id/enter_password_2_EditText"
+        android:layout_alignLeft="@id/enter_password_2_EditText"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:visibility="invisible"
+
+
+
+        />
+
+    <TextView
+
+        android:id="@+id/password_or_user_name_invalid_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#EF5350"
+        android:text="password or userName invalid, both should be over 4 characters and Do not contain white space  "
+
+        android:layout_below="@+id/enter_password_2_EditText"
+        android:layout_alignLeft="@id/enter_password_2_EditText"
+        android:visibility="invisible"
+
+
+
+        />
+
+
+    <Button
+        android:id="@+id/sign_in_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_or_user_name_invalid_TextView"
+        android:layout_alignLeft="@id/enter_password_2_EditText"
+        android:layout_marginLeft="@dimen/margin_25dp"
+
+        android:text="sign in"
+        android:backgroundTint="@color/light_blue_100"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"/>
+
+
+
+    <Button
+        android:id="@+id/log_in_Button_sign_in_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_25dp"
+        android:backgroundTint="@color/light_blue_100"
+        android:text="log in"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="0dp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
