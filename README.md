@@ -26,8 +26,11 @@
 * measuerement distances using haversine algorithm
 ## screenshots from the application
 
+<img src="https://github.com/user-attachments/assets/f9abe2f1-79bd-49be-a46c-46378b69d159" width="200">
+<img src="https://github.com/user-attachments/assets/6fbe1eed-01a9-4364-8559-48f2e4135907" width="200">
 
-
+<img src="https://github.com/user-attachments/assets/582f288b-0b2c-4f0d-b162-39378f07053f" width="200">
+<img src="https://github.com/user-attachments/assets/bf4202aa-64a4-447a-967e-06500e0139dd" width="200">
 
 
 
